@@ -1,0 +1,11 @@
+[package]
+name = "footable-cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prettytable-rs = "^0.8"
+curl = "0.4.42"
+scraper = "0.12.0"
