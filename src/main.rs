@@ -24,7 +24,7 @@ fn request_data(league: i8) -> String {
     let league_path = get_league_path(league);
     let request_url: String = format!("https://www.skysports.com/{}", league_path);
 
-    println!("{}", request_url);
+    // println!("{}", request_url);
 
     let mut easy = Easy::new();
     easy.url(&request_url).unwrap();
@@ -108,7 +108,13 @@ fn main() {
             break
         }
 
-        println!("---Type 'exit' to quit from CLI---");
+        println!(r#"---Type 'exit' to quit from CLI---
+        Footable CLI Menu:
+        1 - Premier league
+        2 - Bundesliga
+        3 - La Liga
+        -------------------
+        "#);
 
         let mut buf = String::new();
 
